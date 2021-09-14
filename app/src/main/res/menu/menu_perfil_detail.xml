@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ui.detalle.DetallePerfilActivity">
+    <item
+        android:id="@+id/action_delet"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="1"
+        android:title="@string/action_notifi"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_meGusta"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="1"
+        android:title="@string/action_notifi"
+        app:showAsAction="ifRoom" />
+</menu>

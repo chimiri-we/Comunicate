@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginEnd="020dp"
+    android:layout_marginRight="020dp"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:padding="15dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E3E3"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTRO"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_500"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/passwordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/nombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/apellidosRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/diaRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Dia"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/purple_500"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/mesRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Mes"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/purple_500"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/añoRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Año"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/purple_500"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/correoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electronico"
+            android:minHeight="48dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/purple_500" />
+
+        <EditText
+            android:id="@+id/telefonoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefono"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/purple_500" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/RDhombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:hint="Hombre"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp" />
+
+            <RadioButton
+                android:id="@+id/RDmujer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mujer"
+                android:paddingLeft="25sp"
+                android:paddingRight="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Registrar"
+            android:onClick="onClick"
+            android:textColorHint="@color/purple_500"
+            android:theme="@style/BotonColores" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

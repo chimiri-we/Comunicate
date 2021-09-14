@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dee4ee"
+    android:orientation="vertical"
+    tools:ignore="UselessParent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/espacio_norma_1">
+
+            <androidx.cardview.widget.CardView
+                card_view:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/espacio_norma_1">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toStartOf="@+id/ic_cambiar_imagen"
+                        android:layout_toLeftOf="@+id/ic_cambiar_imagen"
+                        card_view:helperText="Id Usuario">
+
+                        <TextView
+                            android:id="@+id/texto_foto_perfil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="id"
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_perfil"
+                        android:layout_width="@dimen/avatar_size"
+                        android:layout_height="@dimen/avatar_size"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_person_24" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="150dp"
+                        android:layout_marginRight="150dp"
+
+                        android:layout_toEndOf="@+id/img_perfil"
+                        android:layout_toRightOf="@+id/img_perfil"
+                        card_view:helperText="Nombre">
+
+                        <TextView
+                            android:id="@+id/tv_nombre_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nombre" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/ic_cambiar_imagen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@android:drawable/ic_menu_camera" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/titulo_informacion_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="@string/etiqueta_info_usuario"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="2"
+                        android:padding="@dimen/espacio_norma_1"
+                        android:rowCount="2">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/espacio_norma_2"
+                            android:src="@drawable/face_profile" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/label_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/titulo"
+                            card_view:helperText="Nombre Usuario">
+
+                            <TextView
+                                android:id="@+id/texto_nombre"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="James Revelo"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/espacio_norma_2"
+                            android:src="@drawable/face_profile" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            card_view:helperText="Apellidos">
+
+                            <TextView
+                                android:id="@+id/texto_usuario"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="James Revelo"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imageview_telefono"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="@dimen/espacio_norma_2"
+                            android:src="@drawable/ic_phone" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            card_view:helperText="Telefono">
+
+                            <TextView
+                                android:id="@+id/texto_telefono"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="66 666 66"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_email" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            card_view:helperText="Correo">
+
+                            <TextView
+                                android:id="@+id/texto_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="james@mail.com"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </GridLayout>
+
+                    <ImageView
+                        android:id="@+id/icono_edit_datos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        card_view:srcCompat="@drawable/ic_edit"
+                        card_view:tint="#0B0A0A"
+                        tools:ignore="VectorDrawableCompat" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/titulo_contrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/espacio_norma_1"
+
+                android:paddingBottom="@dimen/espacio_norma_2"
+                android:text="@string/etiqueta_contrasena"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/espacio_norma_1">
+
+                    <ImageView
+                        android:id="@+id/icono_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:src="@android:drawable/ic_partial_secure" />
+
+                    <TextView
+                        android:id="@+id/detalle_nombre_producto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/icono_password"
+                        android:text="@string/texto_cambiar_contrasena"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <ImageView
+                        android:id="@+id/icono_indicador_derecho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_edit"
+                        card_view:tint="@color/black" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/titulo_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/espacio_norma_1"
+                android:paddingBottom="@dimen/espacio_norma_2"
+                android:text="@string/etiqueta_direccion"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <ImageView
+                            android:id="@+id/icono_direccion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_location" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_toStartOf="@+id/icono_editar_derecho"
+                            android:layout_toLeftOf="@+id/icono_editar_derecho"
+                            android:layout_toEndOf="@+id/icono_direccion"
+                            android:layout_toRightOf="@+id/icono_direccion"
+                            card_view:helperText="Direccion">
+
+                            <TextView
+                                android:id="@+id/texto_direccion_usuario"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/texto_cambiar_direccion"
+                                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/icono_editar_derecho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_edit"
+                            card_view:tint="#0B0A0A" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

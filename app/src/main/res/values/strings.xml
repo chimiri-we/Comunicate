@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Comunicate</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="action_sync">Sincronizar</string>
+
+    <string name="account_type">com.example.comunicate.account</string>
+    <string name="provider_authority">com.example.comunicate</string>
+
+    <string name="empty_list">No hay datos</string>
+
+    <string name="title_activity_detail">Nuevo gasto</string>
+    <string name="monto_hint">Monto</string>
+    <string name="descripcion_hint">Descripción</string>
+    <string name="etiqueta_title">Etiqueta</string>
+    <string name="fecha_title">Fecha</string>
+    <string-array name="etiquetas">
+        <item>Comida</item>
+        <item>Transporte</item>
+        <item>Diversión</item>
+    </string-array>
+    <string name="boton">AGREGAR GASTO</string>
+    <string name="usuario">Usuario</string>
+    <string name="escribe">Escribe un mensaje...</string>
+    <string name="registro">Registrarme</string>
+    <string name="etiqueta_info_usuario">Informacion Usuario</string>
+    <string name="etiqueta_contrasena">Contraseña</string>
+    <string name="texto_cambiar_contrasena">Cambiar Contraseña</string>
+    <string name="etiqueta_direccion">Direccion</string>
+    <string name="texto_cambiar_direccion">Cambiar Direccion</string>
+
+    <string name="action_search">Buscar</string>
+    <string name="action_carrito">Añadir al carrito</string>
+
+    <string name="item_inicio">Inicio</string>
+    <string name="item_cuenta">Mi Cuenta</string>
+    <string name="item_categorias">Categorías</string>
+    <string name="item_configuracion">Configuración</string>
+
+    <string name="titulo_comidas_populares">Lo más pedido</string>
+
+    <string name="titulo_tab_platillos">PLATILLOS</string>
+    <string name="titulo_tab_bebidas">BEBIDAS</string>
+    <string name="titulo_tab_postres">POSTRES</string>
+
+    <string name="titulo_tab_perfil">PERFIL</string>
+    <string name="titulo_tab_direcciones">DIRECCIONES</string>
+    <string name="titulo_tab_tarjetas">TARJETAS</string>
+
+    <string name="texto_no_tarjetas">No tienes ninguna tarjeta asociada</string>
+
+    <string name="etiqueta_carrito">Carrito</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_carrito">CarritoActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="signup_login_hint">Ya tengo una Cuenta</string>
+    <string name="prompt_email">email</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in">Iniciar sesion</string>
+    <string name="login_failed">No puede ingresar</string>
+    <string name="invalid_username">Usuario Invalido</string>
+    <string name="invalid_password">Password Incorrecta</string>
+    <string name="titulo_tab_compras">COMPRAS</string>
+    <string name="titulo_tab_pedidos">PEDIDOS</string>
+    <string name="cantidad">TextView</string>
+    <string name="nombre_usuario">Nombre Usuario</string>
+    <string name="id_usuario">ID</string>
+    <string name="Direccion">Direccion</string>
+    <string name="telefono">Telefono</string>
+    <string name="item_lo_nuevo">Lo nuevo</string>
+    <string name="titulo_actividad_carrito">Carrito de Compras</string>
+    <string name="titulo_tab_notificaciones">Notificaciones</string>
+    <string name="nombre_transicion_imagen">nombre imagenm</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="item_cerrar">Cerrar sesion</string>
+    <string name="action_chat">Mensajes</string>
+    <string name="action_notifi">Notificaciones</string>
+    <string name="menu_datos">Datos</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="large_text">no hay texto</string>
+</resources>

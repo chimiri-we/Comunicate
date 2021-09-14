@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.comunicate">
+    <!-- Red -->
+    <queries />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- - para usar la camara desde la App -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- escribir en memoria para guardar las fotos -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Comunicate">
+        <activity
+            android:name=".web.ConectActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.FragmentBuscar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.gallery.ActivityImagen"
+            android:exported="true" />
+        <activity
+            android:name=".actividades.ActivityGallery"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".ui.detalle.DetallePerfilActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.ConNavigationDrawer" />
+
+        <service
+            android:name=".services.NotifyService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Comunicate.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mensajes.chat"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Comunicate">
+
+        </activity>
+        <activity
+            android:name=".actividades.ActivityUsuarios"
+            android:theme="@style/Theme.ConNavigationDrawer">
+
+        </activity>
+        <activity
+            android:name=".sync.login.ContentRegistro"
+            android:theme="@style/Theme.ConNavigationDrawer">
+
+        </activity>
+        <activity
+            android:name=".actividades.ActivityDetalleImagen"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Comunicate.NoActionBar">
+
+        </activity> <!-- ACTIVIDAD DE INSERCIÓN -->
+        <activity
+            android:name=".sync.login.ContentLogin"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.Comunicate.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+        </activity> <!-- PROVIDER -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
